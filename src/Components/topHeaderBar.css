@@ -1,0 +1,109 @@
+body {
+  background-color: #000;
+  margin: 0;
+}
+
+.topHeaderName {
+  background: linear-gradient(135deg, #1a1a1a, #0f0f0f, #1a1a1a);
+  width: 90%;
+  height: 100px;
+  margin: 40px auto;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.topHeaderName img {
+  display: block;
+}
+
+.topHeaderName::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -50%;
+  width: 50%;
+  height: 3px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    #d4af37,
+    #ffd700,
+    #d4af37,
+    transparent
+  );
+  animation: goldShine 6s linear infinite;
+}
+
+@keyframes goldShine {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.topHeaderName p {
+  font-family: "Great Vibes", cursive;
+  font-style: italic;
+
+  letter-spacing: 1px;
+  color: #d4af37;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.topHeaderTitle p {
+  font-size: 20px;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.headerBellIcon {
+  width: 75px;
+  height: 50px;
+  margin-left: auto;
+  display: block;
+}
+
+.myName p {
+  color: white;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.bell,
+.myName {
+  display: flex;
+  align-items: center;
+}
+
+.avatarPlaceholder {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 5px solid #d4af37;
+  border-radius: 50%;
+  background-color: white; /* neutral dark placeholder */
+
+  font-size: 3px; /* subtle edge so it’s visible */
+
+  display: flex;
+  align-items: center; /* vertical center */
+  justify-content: center;
+
+  color: black;
+  font-size: 12px;
+  text-align: center;
+}

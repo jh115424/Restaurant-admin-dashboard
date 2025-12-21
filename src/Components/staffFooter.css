@@ -1,0 +1,8 @@
+.footerContainer {
+  background-color: white;
+  width: 90%;
+  height: 300px;
+
+  margin: 40px auto;
+  border-radius: 5px;
+}
