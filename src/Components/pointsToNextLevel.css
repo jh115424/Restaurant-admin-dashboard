@@ -1,0 +1,87 @@
+.rewardLevel {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.rewardLevel p {
+  color: white;
+  margin-left: 50px;
+  font-size: 22px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pointsCardDivider {
+  width: 80%;
+  height: 3px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 50px;
+  background: linear-gradient(to right, gold, #ffd700, gold);
+  position: relative;
+  z-index: 0;
+}
+
+.pointsCardDivider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, white, transparent);
+  opacity: 0.8;
+  animation: shimmer 2s linear infinite;
+}
+
+@keyframes shimmer {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.guestPointCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.bronzeCard,
+.goldCard,
+.silverCard,
+.platinumCard {
+  height: 150px;
+  width: 270px;
+  background-color: white;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #3b2a1a, #2a1d12);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.bronzeCard {
+  background: linear-gradient(135deg, #5a3a2e, #4a2f25);
+}
+
+.silverCard {
+  background: linear-gradient(135deg, #d9d9d9, #bfbfbf);
+}
+
+.goldCard {
+  background: linear-gradient(135deg, #d4af37, #b8962e);
+}
+
+.platinumCard {
+  background: linear-gradient(135deg, #2e2e2e, #1a1a1a);
+}
+
+.bronzeCard,
+.silverCard,
+.goldCard,
+.platinumCard {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
