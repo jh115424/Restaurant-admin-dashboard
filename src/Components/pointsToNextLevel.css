@@ -85,3 +85,19 @@
 .platinumCard {
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
 }
+
+.bronzeCardLogo,
+.silverCardLogo,
+.goldCardLogo,
+.platinumCardLogo {
+  display: flex;
+  height: 70px;
+  position: relative;
+  float: right;
+}
+
+.points,
+.name {
+  margin-left: 10px;
+  font-size: 18px;
+}

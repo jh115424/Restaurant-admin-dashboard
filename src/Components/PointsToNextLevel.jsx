@@ -1,5 +1,9 @@
 import React from "react";
 import "./pointsToNextLevel.css";
+import bronzeShield from "/public/bronzeShield.png";
+import silverShield from "/public/silverShield.png";
+import goldShield from "/public/goldShield.png";
+import platinumShield from "/public/platinumShield.png";
 
 export default function PointsToNextLevel() {
   return (
@@ -16,27 +20,51 @@ export default function PointsToNextLevel() {
 
       <div className="guestPointCards">
         <div className="bronzeCard">
-          <p>Erik Roberts</p>
+          <p className="name">Erik Roberts</p>
           <div className="pointAmount">
-            <p>1,200 points</p>
+            <p className="points">700 points</p>
+          </div>
+          <div className="bronzePointShield">
+            <img
+              src={bronzeShield}
+              alt="bronze-shield"
+              className="bronzeCardLogo"
+            />
           </div>
         </div>
         <div className="silverCard">
-          <p>Erik Roberts</p>
+          <p className="name">Jennifer Hodge</p>
           <div className="pointAmount">
-            <p>1,200 points</p>
+            <p className="points">1,550 points</p>
+          </div>
+          <div className="silverPointShield">
+            <img
+              src={silverShield}
+              alt="silver-shield"
+              className="silverCardLogo"
+            />
           </div>
         </div>
         <div className="goldCard">
-          <p>Erik Roberts</p>
+          <p className="name">Rebecca Chamberlain</p>
           <div className="pointAmount">
-            <p>1,200 points</p>
+            <p className="points">2,200 points</p>
+          </div>
+          <div className="goldPointShield">
+            <img src={goldShield} alt="gold-shield" className="goldCardLogo" />
           </div>
         </div>
         <div className="platinumCard">
-          <p>Erik Roberts</p>
+          <p className="name">Sarah Johnson</p>
           <div className="pointAmount">
-            <p>1,200 points</p>
+            <p className="points">4,200 points</p>
+          </div>
+          <div className="platinumPointShield">
+            <img
+              src={platinumShield}
+              alt="platinum-shield"
+              className="platinumCardLogo"
+            />
           </div>
         </div>
       </div>
