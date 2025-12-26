@@ -2,8 +2,6 @@ import "./topHeaderBar.css";
 import React from "react";
 import headerBell from "/public/headerBell.png";
 
-
-
 export default function TopHeaderBar() {
   return (
     <div className="topHeaderName">
@@ -24,12 +22,7 @@ export default function TopHeaderBar() {
         </div>
 
         <div className="avatarPlaceholder">Staff image</div>
-       
-       
       </div>
-    
     </div>
-   
-   
   );
 }

@@ -1,0 +1,36 @@
+.employeeFooter {
+  background-color: whitesmoke;
+  color: white;
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 40px;
+  margin-right: 40px;
+  align-items: center;
+  height: 245px;
+  margin-bottom: 50px;
+  font-family: sans-serif;
+}
+
+.employeeFooter h2 {
+  color: black;
+  text-align: center;
+  font-size: 18px;
+}
+
+.exclamationSign {
+  height: 20px;
+}
+
+.dangerSign {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.rules {
+  display: flex;
+  color: black;
+  text-align: center;
+  line-height: 1.4;
+}
