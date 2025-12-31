@@ -1,9 +1,4 @@
-.rewardLevel {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 50px;
-  margin-right: 50px;
-}
+
 
 .rewardLevel p {
   color: white;
