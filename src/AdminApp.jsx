@@ -1,5 +1,6 @@
 import Footer from "./Components/Footer";
-import PointsToNextLevel from "./Components/pointsToNextLevel";
+import PointsToNextLevel from "./Components/PointsToNextLevel/";
+
 import TopHeaderBar from "./Components/TopHeaderBar/";
 
 import React from "react";
